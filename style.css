@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    text-decoration:none;
+    display: block;
+    color: #000000;
+}
+a:hover {
+    opacity: 0.6;
+}
+img{
+    max-width:100%; 
+    height:auto;
+}
+
+.header{
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #000;
+    letter-spacing: .05em;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.1); 
+}
+
+.header_inner {
+    display: flex;
+    align-items: center; 
+}
+
+.nav {
+    flex: 1; 
+}
+
+
+.logo img{
+    width: 170px;
+}
+
+.nav_group {
+    display: flex;
+    justify-content: space-around; 
+    padding: 0;
+}
+
+.nav_group_item {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    list-style: none;
+}
+
+.nav_group_item a {
+    color: #333; 
+    padding: 10px; 
+}
+
+.accordion {
+    max-width: 600px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+label {
+    cursor :pointer;
+    padding: 10px;
+    display: block;
+}
+
+label:hover{
+    opacity: 0.5;
+}
+
+input {
+    display: none;
+}
+
+.accordion ul {
+    margin: 0;
+    padding: 0;
+    background :#85c46c;
+    list-style: none;
+}
+
+.accordion li {
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border: #ffffff;
+}
+
+#accordion_bar:checked ~ #links li {
+    padding:3px;
+    height: 40px;
+}
+
+.main{
+    margin-top:75px;
+}
+
+.main_mv{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    
+    background-position: center center;
+    background-size: cover;
+    background-color: #464646;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.main_mv_text{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #ffffffca;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 7px;
+}
+
+.main_mv_text p{
+    text-align: center;
+}
+
+.main{
+    background-color: #c5d2bfad;
+}
+
+.inner_box{
+    margin: 0 10%;
+    padding: 20px 0;
+    background-color:#fff;
+}
+
+.elements_title {
+    border: 2px solid #b0e496; 
+    border-width: thick ;
+    padding: 7px;
+    text-align: center;
+    width: 40%; 
+    margin: 0 auto; 
+    font-size: 0.6rem;
+    color:  #384f39;
+}
+
+.introduction{
+    margin: 20px 5% 0;
+}
+
+.location_main {
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 5% 0;
+}
+
+.location_img {
+    flex: 0 0 50%;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .location_img {
+        flex: 0 0 100%; 
+    }
+}
+
+.location_img_prefecture img,
+.location_img_city img {
+    max-width: 100%;
+    width: 100%;;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.location_coments {
+    padding: 20px; 
+    background-color: #f9f69b8d; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 0 20px;
+    
+}
+
+.location_coments p {
+    margin: 15px 0; 
+    font-size: 1rem;
+    line-height: 1.6; 
+}
+
+.location_coments_element{
+    text-align: center;
+}
+
+.article_elements{
+    max-width: 100%;
+}
+
+.article_elements:after {
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.article_elements_title{
+    padding: 5px;
+    margin: 0 10px;
+    border-bottom: solid 5px #ffc600;
+}
+
+.article_elements_title h1{
+    clear: both;
+    font-size: 25px;
+    font-family: 'Kosugi Maru', sans-serif;
+    
+}
+
+.article_elements p{
+    font-size: 14pt;
+    color: black;
+    text-indent: 1.6em;
+    line-height: 1.7;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: lighter;
+}
+
+.article_elements_img{
+    overflow: hidden;
+    margin: 30px;
+}
+
+.article_elements_coments{
+    padding: 30px; 
+    margin: 4% 0;
+    
+}
+
+.ranking_title{
+    position: relative;
+    font-size: 1.5rem;
+    font-family: 'Kosugi Maru', sans-serif;
+    padding-bottom: 5px;
+    border-bottom: dashed 5px #ffc600;
+    text-align: center;
+    width: 500px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.ranking_elements_title h1{
+    border-bottom: 10px  solid #fff799;
+    font-weight:bold; 
+    display: inline;
+}
+
+.rank{
+    color: #e80000;
+}
+
+.ranking_elements_img{
+    text-align: center;
+    margin: 20px;
+}
+
+.ranking_elements_coments{
+    margin: 20px;
+}
+
+.img_side{
+    display: flex;
+    align-items: flex-end
+}
+
+.rank_sonota{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.4rem;
+    margin: 20px 30px;
+}
+
+.recomend_coments{
+    background:linear-gradient(transparent 75%, #ffbf7f 75%);
+    font-weight:bold; 
+}
+
+.inner_box_photo{
+    background-image: url(images/photo_haikei6.jpg);
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.photo_album_img{
+    margin: 20px;
+    position: relative;
+    width: 500px;
+}
+
+.photo_coments{
+    margin : 0 20px 20px;
+    padding: 5px;
+    line-height: 35px;
+    clear: both;
+    background-color: rgba(255,203,23,0.5);
+    width: 500px;
+}
+
+
+.photo_coments h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.photo_coments p{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #85c46c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#copyright {
+    font-size: 0.8em;
+}
+
